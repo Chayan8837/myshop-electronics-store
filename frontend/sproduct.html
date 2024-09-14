@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+</head>
+
+
+
+
+
+
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+
+
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="auth-links">
+                <a href="#login" id="login-link">Login</a>
+                <a href="#logout" id="logout-link" style="display: none;">Logout</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="prodetails">
+        <div class="prodetails-left">
+            <div class="prodetails-photos">
+                <div class="prodetails-photo">
+                    <img src="placeholder.jpg" alt="Slide 1">
+                </div>
+                <div class="prodetails-photo">
+                    <img src="placeholder.jpg" alt="Slide 2">
+                </div>
+                <div class="prodetails-photo">
+                    <img src="placeholder.jpg" alt="Slide 3">
+                </div>
+                <a class="prodetails-prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="prodetails-next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="prodetails-right">
+            <div class="prodetails-heading">
+                <h4 id="product-name">Product Name</h4>
+            </div>
+            <div class="prodetails-desc">
+                Product description goes here.
+            </div>
+            <div class="prodetails-prices">
+                <div class="prodetails-newprice" id="new-price">New Price</div>
+                <div class="prodetails-oldprice" id="old-price">Old Price</div>
+            </div>
+            <div class="prodetails-offers">
+                <div class="prodetails-offer">
+                    Special offers go here.
+                </div>
+            </div>
+            <div class="prodetails-checkout">
+                Quantity
+                <i class="fas fa-minus-circle" onclick="changeQuantity(-1)"></i>
+                <span id="quantity">1</span>
+                <i class="fas fa-plus-circle" onclick="changeQuantity(1)"></i>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="prodetails-delivery">
+                <h3>Check Delivery Date</h3>
+                Enter Pincode to check estimated delivery date
+                <input type="text" placeholder="Enter Pincode">
+                <button>Check</button>
+            </div>
+            <div class="prodetails-profeatures">
+                <div class="prodetails-profeature">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>7 day replacement</span>
+                </div>
+                <div class="prodetails-profeature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>1 year warranty</span>
+                </div>
+                <div class="prodetails-profeature">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure payment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="hot-selling">
+        <div class="hot-selling-text">
+            Hot-Selling Gadgets
+            <a href="#">view &#10095;</a>
+        </div>
+        <div class="products-container" id="hotSellingList">
+        </div>
+    </section>
+
+
+
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section footer-about">
+                <h3>About Us</h3>
+                <p>Learn more about our company and values. We strive to offer the best products and services to our customers.</p>
+            </div>
+            
+            <div class="footer-section footer-my-account">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section footer-install-options">
+                <h3>Install Options</h3>
+                <div class="install-box">
+                    <a href="https://apps.apple.com" target="_blank" class="app-link ios-link">
+                        <i class="fab fa-app-store-ios"></i> iOS App
+                    </a>
+                    <a href="https://play.google.com" target="_blank" class="app-link android-link">
+                        <i class="fab fa-google-play"></i> Android App
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Payment Gateways Section -->
+            <div class="footer-section footer-payment-gateways">
+                <h3>Payment Gateways</h3>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-discover"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="footer-section footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 1234 Street Name, City, Country</p>
+                <div class="social-media">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="sproduct.js"></script>
+
+</body>
+</html>

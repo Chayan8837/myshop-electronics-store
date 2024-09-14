@@ -1,0 +1,242 @@
+
+.prodetails {
+    display: flex;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.prodetails-left {
+    width: 110vh;
+}
+
+
+
+.prodetails-photos {
+    background-color: #f4f4f4; 
+    height: 100vh;
+    width: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prodetails-photo {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust the spacing between photos */
+}
+
+.prodetails-photo img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+.prodetails-prev, .prodetails-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prodetails-prev {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prodetails-next {
+    left : 50%;
+    border-radius: 0 3px 3px 0;
+}
+
+
+
+
+.prodetails-right {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prodetails-heading,
+.prodetails-desc,
+.prodetails-prices,
+.prodetails-offers,
+.prodetails-checkout,
+.prodetails-delivery,
+.prodetails-profeatures {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.prodetails-heading h4 {
+    font-size: 35px;
+}
+.prodetails-desc{
+    color: #12121299;
+}
+
+
+
+.prodetails-prices {
+    display: flex;
+    align-items: baseline;
+}
+
+.prodetails-newprice {
+    font-size: 24px;
+    color: #d9534f;
+    margin-right: 10px;
+}
+
+.prodetails-oldprice {
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.prodetails-offers{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
+}
+
+.prodetails-offer {
+    color: #fff;
+    background-color: #12df12;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.prodetails-offer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    height: 100%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg);
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0% {
+        left: -50%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.prodetails-checkout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.prodetails-checkout i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.prodetails-checkout button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prodetails-checkout button:hover {
+    background-color: #025aa5;
+}
+
+
+.prodetails-delivery{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+
+
+}
+
+.prodetails-delivery h3 {
+    margin: 0 0 10px;
+}
+
+.prodetails-delivery {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.prodetails-delivery input {
+    padding: 5px;
+    padding-right: 100px; /* Ensure the input doesn't overlap with the button */
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.prodetails-delivery button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-22%);
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+.prodetails-delivery button:hover {
+    background-color: #025aa5;
+}
+
+.prodetails-profeatures {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prodetails-profeature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.prodetails-profeature i {
+    margin-right: 10px;
+    color: #0275d8;
+    font-size: 40px;
+    margin-bottom: 20px;
+}

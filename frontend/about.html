@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <main class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to MyShop! We are dedicated to providing you with the best products and services.</p>
+        <h2>Our Mission</h2>
+        <p>Our mission is to offer high-quality products at competitive prices, while ensuring customer satisfaction.</p>
+        <h2>Our Team</h2>
+        <p>We have a diverse and talented team committed to bringing you the best shopping experience.</p>
+    </main>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form" method="POST" action="/send-email">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="message-status"></div>
+    </section>
+
+    <script src="about.js"></script>
+</body>
+</html>

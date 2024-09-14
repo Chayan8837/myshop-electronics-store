@@ -1,0 +1,200 @@
+body{
+   background-color: #f4f4f4;
+}
+
+
+.help {
+    width: 100%;
+    background-color: black; /* Fallback color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding to the sides */
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 20px 0px;
+}
+
+.help-image img {
+    height: 250px;
+    
+}
+
+.help-questions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 500;
+}
+
+.help-questions div {
+    margin-bottom: 10px;
+    background: pink;
+    border-radius: 5px;
+    margin-right: -45px;
+    margin-bottom: -1px;
+    text-align: center;
+    padding-top: 20px;
+    height: 60px;
+    width: 100px;
+    z-index: 1000;
+    cursor: pointer;
+
+}
+
+.help-questions input {
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    height: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.help-questions i {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: -50px;
+    margin-bottom: -1px;
+    z-index: 1000;
+    cursor: pointer;
+    display: block;
+    font-size: 34px; 
+}
+
+
+.options {
+    margin: auto;
+    width: 80%;
+    display: flex;
+flex-wrap: wrap;    /* justify-content: space-around; */
+    padding: 20px;
+   
+    
+}
+
+.option {
+    cursor: pointer;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    margin: 30px;
+    border-right: 2px solid #f4f4f4;
+}
+
+.option i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.option p {
+    margin: 0;
+}
+
+.warnings {
+    background: #fff;
+    display: flex;
+    margin-top: 20pX;
+    flex-wrap: wrap; /* Enable wrapping of items */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Center the warning boxes */
+}
+
+.warning {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: space-between; /* Space between content and button */
+    background-color: #fff4e6;
+    border: 1px solid #ffcc80;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px; /* Set width of the warning box */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    height: 200px; /* Adjust height to fit content and button */
+}
+
+.warning p {
+    margin: 0 0 10px 0; /* Add margin below each paragraph */
+    word-wrap: break-word; /* Ensure long words break onto a new line */
+}
+
+.warning button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.warning button:hover {
+    background-color: #e68900;
+}
+
+.warning i {
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+.warning-sign {
+    color: #e53935;
+}
+
+.bulb-sign {
+    color: #ffeb3b;
+}
+
+.knowmore {
+    display: flex;
+    justify-content: space-between; /* Space between button and icon */
+    align-items: center; /* Align items vertically center */
+    margin-top: auto; /* Push the knowmore div to the bottom of the warning box */
+}
+
+
+
+.offers {
+    width: 100%;
+    background: #FFF;
+    display: flex;
+    gap: 170px; 
+    padding: 20px;
+    justify-content: center; /* Center items horizontally */
+}
+
+.offer {
+    width: 300px;
+    display: flex;
+    align-items: center; /* Center items horizontally */
+    background-color: black;
+    color:white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.offer i {
+    font-size: 34px; 
+    color:white; 
+    margin-right: 10px;
+}
+
+.offer p {
+    margin-left: 10px;
+    margin: 0;
+    font-size: 16px; /* Set text size */
+    color:white; /* Set text color */
+}

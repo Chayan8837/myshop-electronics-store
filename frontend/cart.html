@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="Support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" id="home-search" placeholder="Search products...">
+                <button type="submit" id="home-search-button">Search</button>
+                <div id="suggestions" class="suggestions"></div>
+
+            </div>
+    </header>
+
+    <div class="cart">
+        <div class="address">
+            <p>
+                <h2>Dilivery Here:   </h2>
+                <p id="address-info">Add your Address</p>
+
+            </p>
+            
+            <button id="add-address-btn"> Add Address</button>
+            
+        </div>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h1>Price Details</h1>
+            <p><span>Price (<span id="total-quantity">0</span> items): </span><span id="price">0</span></p>
+            <p>Discount: <span id="discount">0</span></p>
+            <p>Delivery charges: <span id="deliveryCharge">200 <span id="free">Free Delivery</span></span></p>
+            <p id="total">Total Amount: <span id="totalAmount">0</span></p>
+        </div>
+
+        <div class="checkout-bar">
+            <div class="checkout-details">
+                <p>
+                    <span id="oldprice" class="old-price">0</span>
+                    <span id="newprice" class="new-price">0</span>
+                </p>
+                <button  class="checkout-button">Place Order</button>
+            </div>
+        </div>
+    </div>
+<div class="cart-hide hide">
+    <div class="cart-not ">
+        <h2>Cart Not Available</h2>
+        <p>It seems like your cart is currently empty or unavailable. Please check back later or explore other products.</p>
+        <a href="index.html" class="shop-now">Shop Now</a>
+    </div>
+</div>
+    
+
+    <script type="module" src="cart.js"></script>
+</body>
+</html>

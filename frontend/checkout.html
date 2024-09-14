@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <h2>Order Summary</h2>
+        <nav>
+            <ul>
+                <li><a href="Support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="address">
+            <h2>Delivery Here:</h2>
+            <p id="address-info">Add your Address</p>
+        </div>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h1>Price Details</h1>
+            <p><span>Price (<span id="total-quantity">0</span> items): </span><span id="price">0</span></p>
+            <p>Discount: <span id="discount">0</span></p>
+            <p>Delivery charges: <span id="deliveryCharge">200 <span id="free">Free Delivery</span></span></p>
+            <p id="total">Total Amount: <span id="totalAmount">0</span></p>
+        </div>
+
+        <div class="payment">
+            <h2>Payment Options:</h2>
+            <form id="payment-form">
+                <div>
+                    <input type="radio" id="cash" name="payment-method" value="cash" checked>
+                    <label for="cash">Cash on Delivery</label>
+                </div>
+                <div>
+                    <input type="radio" id="online" name="payment-method" value="online">
+                    <label for="online">Online Payment</label>
+                </div>
+                <div id="qr-code" style="display: none;">
+                    <h3>Scan QR Code to Pay</h3>
+                    <div  id="qrcode"></div>
+                </div>
+                <button style="height: 50px; border-radius: 30px;" type="submit">Place Order</button>
+            </form>
+            
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

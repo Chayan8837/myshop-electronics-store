@@ -1,0 +1,68 @@
+.about-section {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section label {
+    font-size: 18px;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#message-status {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
